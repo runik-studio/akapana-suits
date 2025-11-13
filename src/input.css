@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    /* Cambiado de 'Inter' a 'Montserrat' */
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ffffff; /* Cambiado a blanco */
+    color: #333333; /* Cambiado a texto oscuro */
+}
+/* Un tono dorado personalizado para los detalles */
+.text-gold {
+    color: #E1C16E;
+}
+.bg-gold {
+    background-color: #E1C16E;
+}
+.border-gold {
+    border-color: #E1C16E;
+}
+/* Oscurecer la imagen de fondo para que el texto sea legible */
+.hero-bg {
+    position: relative;
+    background: url('https://placehold.co/1600x800/8B4513/FFFFFF?text=Vista+Aérea+Cabañas') no-repeat center center;
+    background-size: cover;
+}
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* --- Animación de Scroll --- */
+.fade-in-section {
+    opacity: 0;
+    transform: translateY(30px); /* Inicia 30px más abajo */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.fade-in-section.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
