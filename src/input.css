@@ -21,7 +21,7 @@ body {
 /* Oscurecer la imagen de fondo para que el texto sea legible */
 .hero-bg {
     position: relative;
-    background: url('https://placehold.co/1600x800/8B4513/FFFFFF?text=Vista+Aérea+Cabañas') no-repeat center center;
+    background: url('../assets/portada-cabana.jpg') no-repeat center center;
     background-size: cover;
 }
 .hero-overlay {
