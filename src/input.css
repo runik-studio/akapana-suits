@@ -21,7 +21,7 @@ body {
 /* Oscurecer la imagen de fondo para que el texto sea legible */
 .hero-bg {
     position: relative;
-    background: url('../assets/portada-cabana.jpg') no-repeat center center;
+    background: url('../assets/Cabana-3-desayuno-2-2048x1363.webp') no-repeat center center;
     background-size: cover;
 }
 .hero-overlay {
