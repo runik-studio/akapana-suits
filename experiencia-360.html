@@ -4,7 +4,7 @@
     <title>Akapana Suites</title>
     <!-- Fuente Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="dist/style.css" rel="stylesheet">  
+    <link href="dist/style.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- Cambiado de 'Inter' a 'Montserrat' con más pesos -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap" rel="stylesheet">
@@ -13,71 +13,14 @@
     <style>
     </style>
 </head>
+
 <body>
 
     <!-- Contenedor principal -->
     <div class="bg-white"> <!-- Cambiado de bg-black a bg-white -->
 
         <!-- Header / Nav (Simple) -->
-        <nav class="sticky top-0 z-50 bg-white bg-opacity-90 backdrop-blur-sm shadow-sm">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="flex justify-between items-center h-20">
-                    <!-- Left side: Links on desktop, hamburger on mobile -->
-                    <div class="flex-1 flex justify-start">
-                        <!-- Desktop Links -->
-                        <div class="hidden md:flex items-center space-x-1 lg:space-x-4">
-                            <a href="index.html" class="text-gray-700 hover:text-gold px-3 py-2 rounded-md text-sm font-medium">Inicio</a>
-                            <a href="sobre-nosotros.html" class="text-gray-700 hover:text-gold px-3 py-2 rounded-md text-sm font-medium">Sobre Nosotros</a>
-                            <a href="cabanas.html" class="text-gray-700 hover:text-gold px-3 py-2 rounded-md text-sm font-medium">Cabañas</a>
-                        </div>
-                        <!-- Mobile Menu Button -->
-                        <div class="md:hidden">
-                            <button id="mobile-menu-button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-gold focus:outline-none">
-                                <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
-                                </svg>
-                            </button>
-                        </div>
-                    </div>
 
-                    <!-- Centered Logo -->
-                    <div class="flex-shrink-0 px-4">
-                        <a href="index.html"><img src="assets/logo_akapana.webp" alt="logo" class="w-32 mx-auto"></a>
-                    </div>
-
-                    <!-- Right side: Links and button -->
-                    <div class="flex-1 flex justify-end">
-                        <!-- Desktop Links -->
-                        <div class="hidden md:flex items-center space-x-1 lg:space-x-4">
-                            <a href="experiencia-360.html" class="text-gray-700 hover:text-gold px-3 py-2 rounded-md text-sm font-medium">Experiencia 360</a>
-                            <a href="contacto.html" class="text-gray-700 hover:text-gold px-3 py-2 rounded-md text-sm font-medium">Contacto</a>
-                            <button id="reservarBtnNav" class="bg-gold text-black font-bold text-sm py-2 px-4 rounded-lg shadow-md hover:bg-yellow-300 transition-all duration-300 ease-in-out flex items-center space-x-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                                    <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd" />
-                                </svg>
-                                <span>Reservar Ahora</span>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Menú Desplegable para Móviles -->
-            <div id="mobile-menu" class="md:hidden hidden">
-                <a href="index.html" class="block text-gray-700 hover:text-gold px-4 py-2 text-sm font-medium">Inicio</a>
-                <a href="sobre-nosotros.html" class="block text-gray-700 hover:text-gold px-4 py-2 text-sm font-medium">Sobre Nosotros</a>
-                <a href="cabanas.html" class="block text-gray-700 hover:text-gold px-4 py-2 text-sm font-medium">Cabañas</a>
-                <a href="experiencia-360.html" class="block text-gray-700 hover:text-gold px-4 py-2 text-sm font-medium">Experiencia 360</a>
-                <a href="contacto.html" class="block text-gray-700 hover:text-gold px-4 py-2 text-sm font-medium">Contacto</a>
-                <div class="px-4 py-2">
-                    <button id="reservarBtnNavMobile" class="w-full bg-gold text-black font-bold text-sm py-2 px-4 rounded-lg shadow-md hover:bg-yellow-300 transition-all duration-300 ease-in-out flex items-center justify-center space-x-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                            <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd" />
-                        </svg>
-                        <span>Reservar Ahora</span>
-                    </button>
-                </div>
-            </div>
-        </nav>
 
         <!-- Sección Hero -->
         <header class="hero-bg h-[60vh] md:h-[80vh]">
@@ -86,7 +29,8 @@
                 <h2 class="text-2xl md:text-3xl font-light tracking-wide">CABAÑAS</h2>
                 <h1 class="text-5xl md:text-7xl lg:text-8xl font-black uppercase my-4">Experiencia 360</h1>
                 <p class="text-2xl md:text-3xl font-light">en Villa Berna</p>
-                <button id="reservarBtnHero" class="mt-8 bg-gold text-black font-bold text-lg py-3 px-8 rounded-lg shadow-lg hover:bg-yellow-300 transition-all duration-300 ease-in-out transform hover:scale-105">
+                <button id="reservarBtnHero"
+                    class="mt-8 bg-gold text-black font-bold text-lg py-3 px-8 rounded-lg shadow-lg hover:bg-yellow-300 transition-all duration-300 ease-in-out transform hover:scale-105">
                     Reservar Ahora
                 </button>
             </div>
@@ -97,7 +41,8 @@
             <section class="py-16 sm:py-24 fade-in-section">
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                     <div>
-                        <img src="assets/Tilo-exterior-galeria-y-cochera-scaled (1).webp" alt="Exterior de cabaña" class="rounded-xl shadow-2xl w-full h-auto">
+                        <img src="assets/Tilo-exterior-galeria-y-cochera-scaled (1).webp" alt="Exterior de cabaña"
+                            class="rounded-xl shadow-2xl w-full h-auto">
                     </div>
                     <div>
                         <h2 class="text-3xl font-bold text-gold mb-6">Servicios y Comodidades</h2>
@@ -134,14 +79,16 @@
                     <div class="order-2 md:order-1">
                         <h2 class="text-3xl font-bold text-gold mb-6">El Lugar</h2>
                         <p class="text-lg text-gray-700 mb-4"> <!-- Cambiado a texto oscuro -->
-                            Un predio de 2 hectáreas rodeado de bosque autóctono, con arroyo propio y vistas panorámicas a las sierras. Un entorno ideal para el descanso.
+                            Un predio de 2 hectáreas rodeado de bosque autóctono, con arroyo propio y vistas panorámicas
+                            a las sierras. Un entorno ideal para el descanso.
                         </p>
                         <p class="text-xl font-semibold text-gray-900"> <!-- Cambiado a texto oscuro -->
                             Naturaleza, relax y confort en el corazón de Villa Berna.
                         </p>
                     </div>
                     <div class="order-1 md:order-2">
-                        <img src="assets/Copia-de-Crespon-0001-scaled.webp" alt="Jardín de las cabañas" class="rounded-xl shadow-2xl w-full h-auto">
+                        <img src="assets/Copia-de-Crespon-0001-scaled.webp" alt="Jardín de las cabañas"
+                            class="rounded-xl shadow-2xl w-full h-auto">
                     </div>
                 </div>
             </section>
@@ -149,15 +96,21 @@
             <!-- Sección Galería -->
             <section class="py-16 sm:py-24 fade-in-section">
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <h2 class="text-4xl font-bold text-gold mb-12">Galería de Imágenes</h2> <!-- Eliminado text-center -->
+                    <h2 class="text-4xl font-bold text-gold mb-12">Galería de Imágenes</h2>
+                    <!-- Eliminado text-center -->
                     <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                        <img src="assets/Copia-de-Tilo-0007-scaled.webp" alt="Interior 1" class="rounded-lg shadow-lg w-full h-full object-cover aspect-video transition-all duration-300 ease-in-out transform hover:scale-105">
-                        <img src="assets/Copia-de-Roble-0016-1536x1022.webp" alt="Interior 2" class="rounded-lg shadow-lg w-full h-full object-cover aspect-video transition-all duration-300 ease-in-out transform hover:scale-105">
-                        <img src="assets/Cabanas-1-y-2-hamaca-1-1536x1022.webp" alt="Exterior 1" class="rounded-lg shadow-lg w-full h-full object-cover aspect-video transition-all duration-300 ease-in-out transform hover:scale-105">
-                        <img src="assets/Cabana-3-desayuno-2-2048x1363.webp" alt="Detalle" class="rounded-lg shadow-lg w-full h-full object-cover aspect-video transition-all duration-300 ease-in-out transform hover:scale-105">
+                        <img src="assets/Copia-de-Tilo-0007-scaled.webp" alt="Interior 1"
+                            class="rounded-lg shadow-lg w-full h-full object-cover aspect-video transition-all duration-300 ease-in-out transform hover:scale-105">
+                        <img src="assets/Copia-de-Roble-0016-1536x1022.webp" alt="Interior 2"
+                            class="rounded-lg shadow-lg w-full h-full object-cover aspect-video transition-all duration-300 ease-in-out transform hover:scale-105">
+                        <img src="assets/Cabanas-1-y-2-hamaca-1-1536x1022.webp" alt="Exterior 1"
+                            class="rounded-lg shadow-lg w-full h-full object-cover aspect-video transition-all duration-300 ease-in-out transform hover:scale-105">
+                        <img src="assets/Cabana-3-desayuno-2-2048x1363.webp" alt="Detalle"
+                            class="rounded-lg shadow-lg w-full h-full object-cover aspect-video transition-all duration-300 ease-in-out transform hover:scale-105">
                     </div>
                     <div class="text-center mt-12">
-                        <button class="bg-gold text-black text-lg font-bold py-3 px-8 rounded-lg hover:bg-yellow-300 transition-all duration-300 ease-in-out transform hover:scale-105">
+                        <button
+                            class="bg-gold text-black text-lg font-bold py-3 px-8 rounded-lg hover:bg-yellow-300 transition-all duration-300 ease-in-out transform hover:scale-105">
                             VER MÁS FOTOS
                         </button>
                     </div>
@@ -170,20 +123,28 @@
                     <h2 class="text-4xl font-bold text-gold mb-12">Nuestras Cabañas</h2> <!-- Eliminado text-center -->
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                         <!-- Card Cabaña 1 -->
-                        <div class="bg-white rounded-xl overflow-hidden shadow-2xl border border-gray-100 transition-all duration-300 ease-in-out transform hover:scale-[1.02] hover:shadow-2xl"> <!-- Cambiado de bg-black a bg-white -->
-                            <img src="assets/Copia-de-Roble-exterior-0039-scaled.webp" alt="Cabaña 1" class="w-full h-64 object-cover">
+                        <div
+                            class="bg-white rounded-xl overflow-hidden shadow-2xl border border-gray-100 transition-all duration-300 ease-in-out transform hover:scale-[1.02] hover:shadow-2xl">
+                            <!-- Cambiado de bg-black a bg-white -->
+                            <img src="assets/Copia-de-Roble-exterior-0039-scaled.webp" alt="Cabaña 1"
+                                class="w-full h-64 object-cover">
                             <div class="p-6">
                                 <h3 class="text-2xl font-bold text-gold mb-3">Cabaña 1</h3>
-                                <p class="text-gray-700 mb-4">Descripción breve de la cabaña 1, destacando sus principales características y capacidad.</p> <!-- Cambiado a texto oscuro -->
+                                <p class="text-gray-700 mb-4">Descripción breve de la cabaña 1, destacando sus
+                                    principales características y capacidad.</p> <!-- Cambiado a texto oscuro -->
                                 <a href="#" class="text-gold font-semibold hover:text-yellow-300">VER MÁS →</a>
                             </div>
                         </div>
                         <!-- Card Cabaña 2 -->
-                        <div class="bg-white rounded-xl overflow-hidden shadow-2xl border border-gray-100 transition-all duration-300 ease-in-out transform hover:scale-[1.02] hover:shadow-2xl"> <!-- Cambiado de bg-black a bg-white -->
-                            <img src="assets/Copia-de-Creson-0008-1536x1022.webp" alt="Cabaña 2" class="w-full h-64 object-cover">
+                        <div
+                            class="bg-white rounded-xl overflow-hidden shadow-2xl border border-gray-100 transition-all duration-300 ease-in-out transform hover:scale-[1.02] hover:shadow-2xl">
+                            <!-- Cambiado de bg-black a bg-white -->
+                            <img src="assets/Copia-de-Creson-0008-1536x1022.webp" alt="Cabaña 2"
+                                class="w-full h-64 object-cover">
                             <div class="p-6">
                                 <h3 class="text-2xl font-bold text-gold mb-3">Cabaña 2</h3>
-                                <p class="text-gray-700 mb-4">Descripción breve de la cabaña 2, ideal para parejas o familias pequeñas.</p> <!-- Cambiado a texto oscuro -->
+                                <p class="text-gray-700 mb-4">Descripción breve de la cabaña 2, ideal para parejas o
+                                    familias pequeñas.</p> <!-- Cambiado a texto oscuro -->
                                 <a href="#" class="text-gold font-semibold hover:text-yellow-300">VER MÁS →</a>
                             </div>
                         </div>
@@ -197,20 +158,27 @@
                     <h2 class="text-4xl font-bold text-gold mb-12">Nuestras Suites</h2> <!-- Eliminado text-center -->
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                         <!-- Card Suite 1 -->
-                        <div class="bg-white rounded-xl overflow-hidden shadow-2xl border border-gray-100 transition-all duration-300 ease-in-out transform hover:scale-[1.02] hover:shadow-2xl"> <!-- Cambiado de bg-gray-900 a bg-white -->
-                            <img src="assets/Copia-de-Crespon-0001-scaled (1).webp" alt="Suite 1" class="w-full h-64 object-cover">
+                        <div
+                            class="bg-white rounded-xl overflow-hidden shadow-2xl border border-gray-100 transition-all duration-300 ease-in-out transform hover:scale-[1.02] hover:shadow-2xl">
+                            <!-- Cambiado de bg-gray-900 a bg-white -->
+                            <img src="assets/Copia-de-Crespon-0001-scaled (1).webp" alt="Suite 1"
+                                class="w-full h-64 object-cover">
                             <div class="p-6">
                                 <h3 class="text-2xl font-bold text-gold mb-3">Suite Akapana</h3>
-                                <p class="text-gray-700 mb-4">Nuestra suite principal con hidromasaje, hogar a leña y vistas exclusivas.</p> <!-- Cambiado a texto oscuro -->
+                                <p class="text-gray-700 mb-4">Nuestra suite principal con hidromasaje, hogar a leña y
+                                    vistas exclusivas.</p> <!-- Cambiado a texto oscuro -->
                                 <a href="#" class="text-gold font-semibold hover:text-yellow-300">VER MÁS →</a>
                             </div>
                         </div>
                         <!-- Card Suite 2 -->
-                        <div class="bg-white rounded-xl overflow-hidden shadow-2xl border border-gray-100 transition-all duration-300 ease-in-out transform hover:scale-[1.02] hover:shadow-2xl"> <!-- Cambiado de bg-gray-900 a bg-white -->
+                        <div
+                            class="bg-white rounded-xl overflow-hidden shadow-2xl border border-gray-100 transition-all duration-300 ease-in-out transform hover:scale-[1.02] hover:shadow-2xl">
+                            <!-- Cambiado de bg-gray-900 a bg-white -->
                             <img src="assets/zorros-8-scaled.webp" alt="Suite 2" class="w-full h-64 object-cover">
                             <div class="p-6">
                                 <h3 class="text-2xl font-bold text-gold mb-3">Suite del Bosque</h3>
-                                <p class="text-gray-700 mb-4">Una suite acogedora inmersa en el bosque, con deck privado y total privacidad.</p> <!-- Cambiado a texto oscuro -->
+                                <p class="text-gray-700 mb-4">Una suite acogedora inmersa en el bosque, con deck privado
+                                    y total privacidad.</p> <!-- Cambiado a texto oscuro -->
                                 <a href="#" class="text-gold font-semibold hover:text-yellow-300">VER MÁS →</a>
                             </div>
                         </div>
@@ -224,7 +192,8 @@
                     <h2 class="text-4xl font-bold text-gold mb-12">Ubicación</h2> <!-- Eliminado text-center -->
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                         <div>
-                            <h3 class="text-2xl font-bold text-gray-900 mb-4">Cómo Llegar</h3> <!-- Cambiado a texto oscuro -->
+                            <h3 class="text-2xl font-bold text-gray-900 mb-4">Cómo Llegar</h3>
+                            <!-- Cambiado a texto oscuro -->
                             <p class="text-lg text-gray-700 mb-4"> <!-- Cambiado a texto oscuro -->
                                 Estamos ubicados en el corazón de Villa Berna, sobre el camino principal.
                             </p>
@@ -237,8 +206,9 @@
                         </div>
                         <div>
                             <!-- Placeholder del mapa -->
-                            <div class="bg-gray-200 rounded-xl h-96 flex items-center justify-center"> <!-- Cambiado de bg-gray-800 a bg-gray-200 -->
-                                
+                            <div class="bg-gray-200 rounded-xl h-96 flex items-center justify-center">
+                                <!-- Cambiado de bg-gray-800 a bg-gray-200 -->
+
                             </div>
                         </div>
                     </div>
@@ -248,26 +218,36 @@
             <!-- Sección Opiniones -->
             <section class="py-16 sm:py-24 fade-in-section">
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <h2 class="text-4xl font-bold text-gold mb-12">Opiniones de Huéspedes</h2> <!-- Eliminado text-center -->
+                    <h2 class="text-4xl font-bold text-gold mb-12">Opiniones de Huéspedes</h2>
+                    <!-- Eliminado text-center -->
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                         <!-- Opinión 1 -->
-                        <div class="bg-gray-50 p-6 rounded-xl shadow-lg border border-gray-100 transition-all duration-300 ease-in-out transform hover:scale-105 hover:translate-y-[-5px]"> <!-- Cambiado de bg-gray-900 a bg-gray-50 -->
+                        <div
+                            class="bg-gray-50 p-6 rounded-xl shadow-lg border border-gray-100 transition-all duration-300 ease-in-out transform hover:scale-105 hover:translate-y-[-5px]">
+                            <!-- Cambiado de bg-gray-900 a bg-gray-50 -->
                             <div class="text-yellow-400 text-2xl mb-2">★★★★★</div>
-                            <p class="text-gray-700 mb-4">"Un lugar increíble, la atención es excelente y las cabañas son un sueño. Volveremos sin dudas."</p> <!-- Cambiado a texto oscuro -->
+                            <p class="text-gray-700 mb-4">"Un lugar increíble, la atención es excelente y las cabañas
+                                son un sueño. Volveremos sin dudas."</p> <!-- Cambiado a texto oscuro -->
                             <p class="text-gray-900 font-bold">María G.</p> <!-- Cambiado a texto oscuro -->
                             <p class="text-sm text-gray-500">Fuente: Google</p> <!-- Cambiado a texto oscuro -->
                         </div>
                         <!-- Opinión 2 -->
-                        <div class="bg-gray-50 p-6 rounded-xl shadow-lg border border-gray-100 transition-all duration-300 ease-in-out transform hover:scale-105 hover:translate-y-[-5px]"> <!-- Cambiado de bg-gray-900 a bg-gray-50 -->
+                        <div
+                            class="bg-gray-50 p-6 rounded-xl shadow-lg border border-gray-100 transition-all duration-300 ease-in-out transform hover:scale-105 hover:translate-y-[-5px]">
+                            <!-- Cambiado de bg-gray-900 a bg-gray-50 -->
                             <div class="text-yellow-400 text-2xl mb-2">★★★★★</div>
-                            <p class="text-gray-700 mb-4">"Ideal para desconectar. El entorno natural es bellísimo y las instalaciones de primera calidad."</p> <!-- Cambiado a texto oscuro -->
+                            <p class="text-gray-700 mb-4">"Ideal para desconectar. El entorno natural es bellísimo y las
+                                instalaciones de primera calidad."</p> <!-- Cambiado a texto oscuro -->
                             <p class="text-gray-900 font-bold">Juan P.</p> <!-- Cambiado a texto oscuro -->
                             <p class="text-sm text-gray-500">Fuente: Booking.com</p> <!-- Cambiado a texto oscuro -->
                         </div>
                         <!-- Opinión 3 -->
-                        <div class="bg-gray-50 p-6 rounded-xl shadow-lg border border-gray-100 transition-all duration-300 ease-in-out transform hover:scale-105 hover:translate-y-[-5px]"> <!-- Cambiado de bg-gray-900 a bg-gray-50 -->
+                        <div
+                            class="bg-gray-50 p-6 rounded-xl shadow-lg border border-gray-100 transition-all duration-300 ease-in-out transform hover:scale-105 hover:translate-y-[-5px]">
+                            <!-- Cambiado de bg-gray-900 a bg-gray-50 -->
                             <div class="text-yellow-400 text-2xl mb-2">★★★★★</div>
-                            <p class="text-gray-700 mb-4">"La mejor cabaña en la que estuvimos. Limpieza, confort y una vista espectacular. 10/10."</p> <!-- Cambiado a texto oscuro -->
+                            <p class="text-gray-700 mb-4">"La mejor cabaña en la que estuvimos. Limpieza, confort y una
+                                vista espectacular. 10/10."</p> <!-- Cambiado a texto oscuro -->
                             <p class="text-gray-900 font-bold">Familia R.</p> <!-- Cambiado a texto oscuro -->
                             <p class="text-sm text-gray-500">Fuente: Cabañas.com.ar</p> <!-- Cambiado a texto oscuro -->
                         </div>
@@ -278,7 +258,8 @@
 
         <!-- Sección Booking -->
         <section class="py-16 bg-blue-600 text-white fade-in-section">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center text-center md:text-left">
+            <div
+                class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center text-center md:text-left">
                 <div>
                     <h2 class="text-3xl font-bold">Akapana Suites</h2>
                     <div class="flex items-center justify-center md:justify-start mt-2">
@@ -288,7 +269,8 @@
                     </div>
                 </div>
                 <div class="mt-8 md:mt-0">
-                    <button id="reservarBtn" class="bg-white text-blue-600 font-bold text-lg py-3 px-8 rounded-lg shadow-lg hover:bg-gray-100 transition-all duration-300 ease-in-out transform hover:scale-105">
+                    <button id="reservarBtn"
+                        class="bg-white text-blue-600 font-bold text-lg py-3 px-8 rounded-lg shadow-lg hover:bg-gray-100 transition-all duration-300 ease-in-out transform hover:scale-105">
                         Reservar Ahora
                     </button>
                 </div>
@@ -330,12 +312,16 @@
                     <div class="flex space-x-4">
                         <a href="#" class="text-gray-400 hover:text-gold" aria-label="Facebook">
                             <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                                <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.772-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" />
+                                <path fill-rule="evenodd"
+                                    d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.772-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                                    clip-rule="evenodd" />
                             </svg>
                         </a>
                         <a href="#" class="text-gray-400 hover:text-gold" aria-label="Instagram">
                             <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                                <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm0 16c-3.314 0-6-2.686-6-6s2.686-6 6-6 6 2.686 6 6-2.686 6-6 6zm0-10c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm6.5-3c-.828 0-1.5.672-1.5 1.5s.672 1.5 1.5 1.5 1.5-.672 1.5-1.5-.672-1.5-1.5-1.5z" clip-rule="evenodd" />
+                                <path fill-rule="evenodd"
+                                    d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm0 16c-3.314 0-6-2.686-6-6s2.686-6 6-6 6 2.686 6 6-2.686 6-6 6zm0-10c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm6.5-3c-.828 0-1.5.672-1.5 1.5s.672 1.5 1.5 1.5 1.5-.672 1.5-1.5-.672-1.5-1.5-1.5z"
+                                    clip-rule="evenodd" />
                             </svg>
                         </a>
                     </div>
@@ -352,342 +338,17 @@
     </div>
 
     <!-- Modal de Reserva -->
-    <div id="reservaModal" class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 hidden">
-        <div class="bg-white text-gray-900 rounded-xl shadow-2xl w-full max-w-md m-4 p-8 relative">
-            <!-- Botón de Cerrar -->
-            <button id="closeModalBtn" class="absolute top-4 right-4 text-gray-500 hover:text-gray-900 text-3xl font-bold">&times;</button>
-            
-            <h2 class="text-3xl font-bold text-gold mb-6">Reservar Estadia</h2>
-            
-            <form id="bookingForm">
 
-                <!-- Mensaje de Error General -->
-                <div id="bookingError" class="hidden text-red-600 text-sm text-center mb-4"></div>
-
-                <!-- Step 1: Selección de Fechas -->
-                <div id="step1">
-                    <div class="mb-4">
-                        <label for="fecha" class="block text-sm font-medium text-gray-700 mb-1">Fecha de Ingreso</label>
-                        <!-- Cambiado de type="date" a type="text" para flatpickr -->
-                        <input type="text" id="fecha" name="fecha" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gold" required placeholder="DD/MM/YYYY">
-                    </div>
-                    <div class="mb-6">
-                        <label for="fechaFin" class="block text-sm font-medium text-gray-700 mb-1">Fecha de Egreso</label>
-                        <!-- Cambiado de type="date" a type="text" para flatpickr -->
-                        <input type="text" id="fechaFin" name="fechaFin" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gold" required placeholder="DD/MM/YYYY">
-                    </div>
-                    <div>
-                        <button type="button" id="buscarDisponibilidadBtn" class="w-full bg-gold text-black font-bold text-lg py-3 px-8 rounded-lg hover:bg-yellow-300 transition-colors">
-                            Buscar Disponibilidad
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Step 2: Selección de Cabaña (Oculto) -->
-                <div id="step2" class="hidden">
-                    <label class="block text-sm font-medium text-gray-700 mb-2">Cabañas Disponibles (Total <span id="totalNoches" class="font-bold"></span> noches)</label>
-                    
-                    <div id="cabanaOptionsContainer" class="space-y-3 mb-6">
-                        <!-- Opción 1 -->
-                        <div class="cabana-option p-4 border-2 border-gray-300 rounded-lg cursor-pointer hover:border-gold" data-cabana-name="Suite (2 personas)" data-cabana-price="55000">
-                            <div class="flex justify-between items-center">
-                                <span class="font-bold text-gray-800">Suite (2 personas)</span>
-                                <span class="text-lg font-bold text-gray-900" id="priceSuite"></span>
-                            </div>
-                        </div>
-                        <!-- Opción 2 -->
-                        <div class="cabana-option p-4 border-2 border-gray-300 rounded-lg cursor-pointer hover:border-gold" data-cabana-name="Cabaña Mediana (4 personas)" data-cabana-price="80000">
-                            <div class="flex justify-between items-center">
-                                <span class="font-bold text-gray-800">Cabaña Mediana (4 personas)</span>
-                                <span class="text-lg font-bold text-gray-900" id="priceMediana"></span>
-                            </div>
-                        </div>
-                        <!-- Opción 3 -->
-                        <div class="cabana-option p-4 border-2 border-gray-300 rounded-lg cursor-pointer hover:border-gold" data-cabana-name="Cabaña Grande (6 personas)" data-cabana-price="105000">
-                            <div class="flex justify-between items-center">
-                                <span class="font-bold text-gray-800">Cabaña Grande (6 personas)</span>
-                                <span class="text-lg font-bold text-gray-900" id="priceGrande"></span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <button type="button" id="reservarFinalBtn" class="w-full bg-gold text-black font-bold text-lg py-3 px-8 rounded-lg hover:bg-yellow-300 transition-colors">
-                        Solicitar Reserva
-                    </button>
-                </div>
-
-            </form>
-
-            <!-- Información Adicional -->
-            <div id="infoAdicional" class="mt-6 text-xs text-gray-600 border-t pt-4">
-                <p class="text-sm font-bold text-gray-800 mb-2">Información Importante:</p>
-                <ul class="list-disc list-inside space-y-1">
-                    <li>Check In: 13:00 PM - 22:00 PM</li>
-                    <li>Check Out: hasta 10:00 AM</li>
-                    <li>Impuestos incluidos.</li>
-                    <li>No es pet friendly.</li>
-                </ul>
-                <p class="text-center font-bold text-sm text-blue-600 mt-4">
-                    Reserva Directo - Precio mas bajo garantizado
-                </p>
-            </div>
-
-            <!-- Mensaje de Éxito -->
-            <div id="successMessage" class="hidden mt-6 text-center">
-                <h3 class="text-green-600 font-bold text-xl">¡Solicitud Recibida!</h3>
-                <p class="text-gray-700 text-sm mt-4">Nos pondremos en contacto a la brevedad para confirmar.</p>
-            </div>
-        </div>
-    </div>
 
     <!-- JS de Flatpickr (para el calendario) -->
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     <!-- Locale español para Flatpickr -->
     <script src="https://npmcdn.com/flatpickr/dist/l10n/es.js"></script>
 
+    <script src="assets/js/shared-ui.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            const mobileMenuButton = document.getElementById('mobile-menu-button');
-            const mobileMenu = document.getElementById('mobile-menu');
-
-            if(mobileMenuButton) {
-                mobileMenuButton.addEventListener('click', () => {
-                    mobileMenu.classList.toggle('hidden');
-                });
-            }
-
-            const modal = document.getElementById('reservaModal');
-            const reservarBtn = document.getElementById('reservarBtn');
-            const reservarBtnHero = document.getElementById('reservarBtnHero');
-            const closeModalBtn = document.getElementById('closeModalBtn');
-            const reservarBtnNav = document.getElementById('reservarBtnNav');
-            const reservarBtnNavMobile = document.getElementById('reservarBtnNavMobile');
-            
-            // Elementos del formulario
-            const bookingForm = document.getElementById('bookingForm');
-            const bookingError = document.getElementById('bookingError');
-            const infoAdicional = document.getElementById('infoAdicional');
-            const successMessage = document.getElementById('successMessage');
-
-            // --- Step 1 ---
-            const step1 = document.getElementById('step1');
-            const fechaInput = document.getElementById('fecha');
-            const fechaFinInput = document.getElementById('fechaFin');
-            const buscarDisponibilidadBtn = document.getElementById('buscarDisponibilidadBtn');
-
-            // --- Step 2 ---
-            const step2 = document.getElementById('step2');
-            const totalNochesSpan = document.getElementById('totalNoches');
-            const cabanaOptionsContainer = document.getElementById('cabanaOptionsContainer');
-            const cabanaOptions = document.querySelectorAll('.cabana-option');
-            const priceSuite = document.getElementById('priceSuite');
-            const priceMediana = document.getElementById('priceMediana');
-            const priceGrande = document.getElementById('priceGrande');
-            const reservarFinalBtn = document.getElementById('reservarFinalBtn');
-
-            // --- Estado de la Reserva ---
-            let selectedCabana = null;
-            let calculatedNights = 0;
-            const prices = {
-                "Suite (2 personas)": 55000,
-                "Cabaña Mediana (4 personas)": 80000,
-                "Cabaña Grande (6 personas)": 105000
-            };
-
-            // --- Lógica de Fecha (con Flatpickr) ---
-            
-            // Instancias de Flatpickr
-            let fpIngreso = null;
-            let fpEgreso = null;
-
-            // Calcular mañana
-            let tomorrow = new Date();
-            tomorrow.setDate(tomorrow.getDate() + 1);
-
-            // Configuración base
-            const flatpickrConfig = {
-                dateFormat: "d/m/Y", // Formato DD/MM/YYYY
-                minDate: "today",
-                locale: "es", // Usar el locale español
-            };
-
-            // Inicializar picker de Ingreso
-            fpIngreso = flatpickr("#fecha", {
-                ...flatpickrConfig,
-                defaultDate: "today",
-                onChange: function(selectedDates, dateStr, instance) {
-                    // Cuando cambia la fecha de ingreso, setear el min de la fecha de egreso
-                    if (selectedDates[0]) {
-                        let minEgreso = new Date(selectedDates[0]);
-                        minEgreso.setDate(minEgreso.getDate() + 1);
-                        fpEgreso.set('minDate', minEgreso);
-
-                        // Si la fecha de egreso actual es inválida, actualizarla
-                        if (fpEgreso.selectedDates.length > 0 && fpEgreso.selectedDates[0] <= selectedDates[0]) {
-                            fpEgreso.setDate(minEgreso, true);
-                        }
-                    }
-                }
-            });
-
-            // Inicializar picker de Egreso
-            fpEgreso = flatpickr("#fechaFin", {
-                ...flatpickrConfig,
-                defaultDate: tomorrow,
-                minDate: tomorrow // El minDate inicial ya es mañana
-            });
-
-
-            // --- Lógica de Modal ---
-            const resetModal = () => {
-                // Resetear estado
-                selectedCabana = null;
-                calculatedNights = 0;
-
-                // Resetear UI
-                bookingError.classList.add('hidden');
-                successMessage.classList.add('hidden');
-                
-                step2.classList.add('hidden');
-                step1.classList.remove('hidden');
-                
-                bookingForm.style.display = 'block';
-                infoAdicional.style.display = 'block';
-
-                cabanaOptions.forEach(option => {
-                    option.classList.remove('border-gold');
-                    option.classList.add('border-gray-300');
-                });
-                
-                // Resetear flatpickr
-                fpIngreso.clear();
-                fpIngreso.set('minDate', 'today');
-                fpIngreso.setDate('today');
-                
-                let tomorrowReset = new Date();
-                tomorrowReset.setDate(tomorrowReset.getDate() + 1);
-                fpEgreso.clear();
-                fpEgreso.set('minDate', tomorrowReset);
-                fpEgreso.setDate(tomorrowReset);
-            };
-
-            const openModal = () => {
-                resetModal(); // Siempre resetear al abrir
-                modal.classList.remove('hidden');
-            };
-            
-            const closeModal = () => modal.classList.add('hidden');
-
-            reservarBtn.addEventListener('click', openModal);
-            reservarBtnHero.addEventListener('click', openModal);
-            closeModalBtn.addEventListener('click', closeModal);
-            if(reservarBtnNav) reservarBtnNav.addEventListener('click', openModal);
-            if(reservarBtnNavMobile) reservarBtnNavMobile.addEventListener('click', openModal);
-            
-            modal.addEventListener('click', (e) => {
-                if (e.target === modal) {
-                    closeModal();
-                }
-            });
-
-            // --- Lógica de Formulario ---
-
-            // Step 1: Buscar Disponibilidad (Cálculo de precios)
-            buscarDisponibilidadBtn.addEventListener('click', () => {
-                bookingError.classList.add('hidden');
-                
-                // Obtener fechas de flatpickr
-                const fechaStr = fechaInput.value;
-                const fechaFinStr = fechaFinInput.value;
-
-                if (!fechaStr || !fechaFinStr) {
-                    bookingError.textContent = 'Por favor, complete ambas fechas.';
-                    bookingError.classList.remove('hidden');
-                    return;
-                }
-
-                // Convertir fechas DD/MM/YYYY a objetos Date para comparar
-                const parseDate = (str) => {
-                    const parts = str.split('/');
-                    // new Date(año, mes - 1, dia)
-                    return new Date(parts[2], parts[1] - 1, parts[0]);
-                };
-
-                const date1 = parseDate(fechaStr);
-                const date2 = parseDate(fechaFinStr);
-
-                if (date2 <= date1) {
-                    bookingError.textContent = 'La fecha de egreso debe ser posterior a la de ingreso.';
-                    bookingError.classList.remove('hidden');
-                    return;
-                }
-
-                // Cálculo de noches
-                const diffTime = Math.abs(date2 - date1);
-                calculatedNights = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
-                totalNochesSpan.textContent = calculatedNights;
-
-                // Calcular y mostrar precios
-                priceSuite.textContent = `ARS $${(prices["Suite (2 personas)"] * calculatedNights).toLocaleString('es-AR')}`;
-                priceMediana.textContent = `ARS $${(prices["Cabaña Mediana (4 personas)"] * calculatedNights).toLocaleString('es-AR')}`;
-                priceGrande.textContent = `ARS $${(prices["Cabaña Grande (6 personas)"] * calculatedNights).toLocaleString('es-AR')}`;
-
-                // Avanzar al Step 2
-                step1.classList.add('hidden');
-                step2.classList.remove('hidden');
-            });
-
-            // Step 2: Selección de Cabaña
-            cabanaOptions.forEach(option => {
-                option.addEventListener('click', () => {
-                    // Resetear estilos
-                    cabanaOptions.forEach(opt => {
-                        opt.classList.remove('border-gold', 'bg-yellow-50');
-                        opt.classList.add('border-gray-300');
-                    });
-                    
-                    // Aplicar estilo seleccionado
-                    option.classList.add('border-gold', 'bg-yellow-50');
-                    option.classList.remove('border-gray-300');
-                    
-                    // Guardar selección
-                    selectedCabana = {
-                        name: option.dataset.cabanaName,
-                        pricePerNight: option.dataset.cabanaPrice,
-                        totalPrice: prices[option.dataset.cabanaName] * calculatedNights
-                    };
-                });
-            });
-
-            // Step 2: Botón Final de Reserva
-            reservarFinalBtn.addEventListener('click', () => {
-                bookingError.classList.add('hidden');
-
-                if (!selectedCabana) {
-                    bookingError.textContent = 'Por favor, seleccione un tipo de cabaña.';
-                    bookingError.classList.remove('hidden');
-                    return;
-                }
-
-                // Log de la reserva (simulación)
-                console.log('Reserva final solicitada:', {
-                    fecha_ingreso: fechaInput.value, // Formato DD/MM/YYYY
-                    fecha_egreso: fechaFinInput.value, // Formato DD/MM/YYYY
-                    noches: calculatedNights,
-                    cabana: selectedCabana.name,
-                    precio_total: selectedCabana.totalPrice
-                });
-                
-                // Mostrar mensaje de éxito
-                bookingForm.style.display = 'none';
-                infoAdicional.style.display = 'none';
-                successMessage.classList.remove('hidden');
-                
-                // NO CERRAR AUTOMÁTICAMENTE
-                // setTimeout(() => {
-                //     closeModal();
-                // }, 5000); // <- Línea eliminada
-            });
+            initSharedUI();
 
             // --- Lógica de Animación en Scroll ---
             const sectionsToFade = document.querySelectorAll('.fade-in-section');
@@ -715,5 +376,32 @@
         });
     </script>
 
+    // --- Lógica de Animación en Scroll ---
+    const sectionsToFade = document.querySelectorAll('.fade-in-section');
+
+    const observerOptions = {
+    root: null, // usa el viewport
+    rootMargin: '0px',
+    threshold: 0.1 // 10% del elemento debe estar visible
+    };
+
+    const fadeInOnScroll = (entries, observer) => {
+    entries.forEach(entry => {
+    if (entry.isIntersecting) {
+    entry.target.classList.add('is-visible');
+    observer.unobserve(entry.target); // Dejar de observar una vez que se animó
+    }
+    });
+    };
+
+    const scrollObserver = new IntersectionObserver(fadeInOnScroll, observerOptions);
+
+    sectionsToFade.forEach(section => {
+    scrollObserver.observe(section);
+    });
+    });
+    </script>
+
 </body>
+
 </html>
